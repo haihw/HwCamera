@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="bottomBarView" destination="103" id="104"/>
+                <outlet property="btnCamera" destination="11" id="36"/>
+                <outlet property="btnDone" destination="15" id="69"/>
+                <outlet property="btnEffect" destination="16" id="52"/>
+                <outlet property="btnFrame" destination="31" id="59"/>
+                <outlet property="btnGalery" destination="12" id="70"/>
+                <outlet property="btnHelp" destination="540" id="938"/>
+                <outlet property="btnSelCamera" destination="18" id="933"/>
+                <outlet property="btnSelDone" destination="22" id="937"/>
+                <outlet property="btnSelEffect" destination="17" id="939"/>
+                <outlet property="btnSelFrame" destination="32" id="942"/>
+                <outlet property="btnSelGalery" destination="19" id="934"/>
+                <outlet property="btnSelSetting" destination="21" id="936"/>
+                <outlet property="btnSelShare" destination="20" id="935"/>
+                <outlet property="btnSelSticker" destination="28" id="940"/>
+                <outlet property="btnSelText" destination="33" id="941"/>
+                <outlet property="btnSelUtility" destination="35" id="943"/>
+                <outlet property="btnSetting" destination="14" id="121"/>
+                <outlet property="btnShare" destination="13" id="112"/>
+                <outlet property="btnSticker" destination="29" id="96"/>
+                <outlet property="btnText" destination="30" id="56"/>
+                <outlet property="btnUtility" destination="34" id="61"/>
+                <outlet property="mainBackgroundView" destination="8" id="538"/>
+                <outlet property="previewImageView" destination="63" id="74"/>
+                <outlet property="topBarView" destination="101" id="102"/>
+                <outlet property="view" destination="6" id="7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="6">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="top" image="Main_Bg.png" id="8">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="63">
+                    <rect key="frame" x="5" y="59" width="310" height="310"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <view contentMode="scaleToFill" id="101" userLabel="View - TOPBar">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="11" userLabel="Button - CameraOff">
+                            <rect key="frame" x="0.0" y="0.0" width="64" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="NewMain_CameraOff.png" backgroundImage="Main_TopBtnBg1Off.jpg">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="NewMain_CameraOn.png" backgroundImage="Main_TopBtnBg1On.jpg">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnCamera_Click:" destination="-1" eventType="touchUpInside" id="125"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="18" userLabel="Button - CameraOn">
+                            <rect key="frame" x="0.0" y="0.0" width="64" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="NewMain_CameraOn.png" backgroundImage="Main_TopBtnBg1On.jpg">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="NewMain_CameraOff.png" backgroundImage="Main_TopBtnBg1Off.jpg">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnCamera_Click:" destination="-1" eventType="touchUpInside" id="106"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="12" userLabel="Button - GaleryOff">
+                            <rect key="frame" x="64" y="0.0" width="64" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="NewMain_GalleryOff.png" backgroundImage="Main_TopBtnBg2Off.jpg">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="NewMain_GalleryOn.png" backgroundImage="Main_TopBtnBg2On.jpg">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnGalery_Click:" destination="-1" eventType="touchUpInside" id="72"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="19" userLabel="Button - GaleryOn">
+                            <rect key="frame" x="64" y="0.0" width="64" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="NewMain_GalleryOn.png" backgroundImage="Main_TopBtnBg2On.jpg">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="NewMain_GalleryOff.png" backgroundImage="Main_TopBtnBg2Off.jpg">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnGalery_Click:" destination="-1" eventType="touchUpInside" id="73"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="13" userLabel="Button - ShareOff">
+                            <rect key="frame" x="128" y="0.0" width="64" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="NewMain_ShareOff.png" backgroundImage="Main_TopBtnBg3Off.jpg">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="NewMain_ShareOn.png" backgroundImage="Main_TopBtnBg3On.jpg">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnShareClick:" destination="-1" eventType="touchUpInside" id="113"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="20" userLabel="Button - ShareOn">
+                            <rect key="frame" x="128" y="0.0" width="64" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="NewMain_ShareOn.png" backgroundImage="Main_TopBtnBg3On.jpg">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="NewMain_ShareOff.png" backgroundImage="Main_TopBtnBg3Off.jpg">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnShareOffClick:" destination="-1" eventType="touchUpInside" id="114"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="14" userLabel="Button - SettingOff">
+                            <rect key="frame" x="192" y="0.0" width="64" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="NewMain_SettingOff.png" backgroundImage="Main_TopBtnBg4Off.jpg">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="NewMain_SettingOn.png" backgroundImage="Main_TopBtnBg4On.jpg">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnSettingOffClick:" destination="-1" eventType="touchUpInside" id="118"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="21" userLabel="Button - SettingOn">
+                            <rect key="frame" x="192" y="0.0" width="64" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="NewMain_SettingOn.png" backgroundImage="Main_TopBtnBg4On.jpg">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="NewMain_SettingOff.png" backgroundImage="Main_TopBtnBg4Off.jpg">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnSettingClick:" destination="-1" eventType="touchUpInside" id="119"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="15" userLabel="Button - DoneOff">
+                            <rect key="frame" x="256" y="0.0" width="64" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="NewMain_ResetOff.png" backgroundImage="Main_TopBtnBg5Off.jpg">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="NewMain_ResetOn.png" backgroundImage="Main_TopBtnBg5On.jpg">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnResetAllClick:" destination="-1" eventType="touchUpInside" id="126"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="22" userLabel="Button - DoneOn">
+                            <rect key="frame" x="256" y="0.0" width="64" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="NewMain_ResetOn.png" backgroundImage="Main_TopBtnBg5On.jpg">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="NewMain_ResetOff.png" backgroundImage="Main_TopBtnBg5Off.jpg">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnResetAllClick:" destination="-1" eventType="touchUpInside" id="123"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="103" userLabel="View - BOTbar">
+                    <rect key="frame" x="0.0" y="447" width="320" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="16" userLabel="Button - EffectOff">
+                            <rect key="frame" x="0.0" y="0.0" width="64" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="NewMain_FxOff.png" backgroundImage="Main_BotBtnBg1Off.jpg">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="NewMain_FxOn.png" backgroundImage="Main_BotBtnBg1On.jpg">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnEffect_Click:" destination="-1" eventType="touchUpInside" id="93"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="17" userLabel="Button - EffectOn">
+                            <rect key="frame" x="0.0" y="0.0" width="64" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="NewMain_FxOn.png" backgroundImage="Main_BotBtnBg1On.jpg">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="NewMain_FxOff.png" backgroundImage="Main_BotBtnBg1Off.jpg">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnEffect_Click:" destination="-1" eventType="touchUpInside" id="92"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="29" userLabel="Button - StickerOff">
+                            <rect key="frame" x="64" y="0.0" width="64" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="NewMain_StickerOff.png" backgroundImage="Main_BotBtnBg2Off.jpg">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="NewMain_StickerOn.png" backgroundImage="Main_BotBtnBg2On.jpg">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnSticker_Click:" destination="-1" eventType="touchUpInside" id="94"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="28" userLabel="Button - StickerOn">
+                            <rect key="frame" x="64" y="0.0" width="64" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="NewMain_StickerOn.png" backgroundImage="Main_BotBtnBg2On.jpg">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="NewMain_StickerOff.png" backgroundImage="Main_BotBtnBg2Off.jpg">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnSticker_Click:" destination="-1" eventType="touchUpInside" id="95"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="30" userLabel="Button - TextOff">
+                            <rect key="frame" x="128" y="0.0" width="64" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="NewMain_TextOff.png" backgroundImage="Main_BotBtnBg3Off.jpg">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="NewMain_TextOn.png" backgroundImage="Main_BotBtnBg3On.jpg">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnText_Click:" destination="-1" eventType="touchUpInside" id="97"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="33" userLabel="Button - TextOn">
+                            <rect key="frame" x="128" y="0.0" width="64" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="NewMain_TextOn.png" backgroundImage="Main_BotBtnBg3On.jpg">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="NewMain_TextOff.png" backgroundImage="Main_BotBtnBg3Off.jpg">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnText_Click:" destination="-1" eventType="touchUpInside" id="98"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="31" userLabel="Button - FrameOff">
+                            <rect key="frame" x="192" y="0.0" width="64" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="NewMain_FrameOff.png" backgroundImage="Main_BotBtnBg4Off.jpg">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="NewMain_FrameOn.png" backgroundImage="Main_BotBtnBg4On.jpg">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnFrame_Click:" destination="-1" eventType="touchUpInside" id="124"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="32" userLabel="Button - FrameOn">
+                            <rect key="frame" x="192" y="0.0" width="64" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="NewMain_FrameOn.png" backgroundImage="Main_BotBtnBg4On.jpg">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="NewMain_FrameOff.png" backgroundImage="Main_BotBtnBg4Off.jpg">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="34" userLabel="Button - UnityOff">
+                            <rect key="frame" x="256" y="0.0" width="64" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="NewMain_UtilitiesOff.png" backgroundImage="Main_BotBtnBg5Off.jpg">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="NewMain_UtilitiesOn.png" backgroundImage="Main_BotBtnBg5On.jpg">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnUtility_Click:" destination="-1" eventType="touchUpInside" id="105"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="35" userLabel="Button - UnityOn">
+                            <rect key="frame" x="256" y="0.0" width="64" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="NewMain_UtilitiesOn.png" backgroundImage="Main_BotBtnBg5On.jpg">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="NewMain_UtilitiesOff.png" backgroundImage="Main_BotBtnBg5Off.jpg">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="540">
+                    <rect key="frame" x="5" y="50" width="29" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="HelpOff.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="HelpOn.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="help_click:" destination="-1" eventType="touchUpInside" id="542"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="HelpOff.png" width="28" height="28"/>
+        <image name="HelpOn.png" width="33" height="33"/>
+        <image name="Main_Bg.png" width="320" height="480"/>
+        <image name="Main_BotBtnBg1Off.jpg" width="64" height="33"/>
+        <image name="Main_BotBtnBg1On.jpg" width="64" height="33"/>
+        <image name="Main_BotBtnBg2Off.jpg" width="64" height="33"/>
+        <image name="Main_BotBtnBg2On.jpg" width="64" height="33"/>
+        <image name="Main_BotBtnBg3Off.jpg" width="64" height="33"/>
+        <image name="Main_BotBtnBg3On.jpg" width="64" height="33"/>
+        <image name="Main_BotBtnBg4Off.jpg" width="64" height="33"/>
+        <image name="Main_BotBtnBg4On.jpg" width="64" height="33"/>
+        <image name="Main_BotBtnBg5Off.jpg" width="64" height="33"/>
+        <image name="Main_BotBtnBg5On.jpg" width="64" height="33"/>
+        <image name="Main_TopBtnBg1Off.jpg" width="66" height="36"/>
+        <image name="Main_TopBtnBg1On.jpg" width="66" height="36"/>
+        <image name="Main_TopBtnBg2Off.jpg" width="66" height="36"/>
+        <image name="Main_TopBtnBg2On.jpg" width="66" height="36"/>
+        <image name="Main_TopBtnBg3Off.jpg" width="64" height="35"/>
+        <image name="Main_TopBtnBg3On.jpg" width="66" height="36"/>
+        <image name="Main_TopBtnBg4Off.jpg" width="66" height="36"/>
+        <image name="Main_TopBtnBg4On.jpg" width="66" height="36"/>
+        <image name="Main_TopBtnBg5Off.jpg" width="66" height="36"/>
+        <image name="Main_TopBtnBg5On.jpg" width="66" height="36"/>
+        <image name="NewMain_CameraOff.png" width="25" height="27"/>
+        <image name="NewMain_CameraOn.png" width="25" height="27"/>
+        <image name="NewMain_FrameOff.png" width="24" height="25"/>
+        <image name="NewMain_FrameOn.png" width="24" height="25"/>
+        <image name="NewMain_FxOff.png" width="22" height="23"/>
+        <image name="NewMain_FxOn.png" width="22" height="23"/>
+        <image name="NewMain_GalleryOff.png" width="26" height="28"/>
+        <image name="NewMain_GalleryOn.png" width="26" height="28"/>
+        <image name="NewMain_ResetOff.png" width="24" height="28"/>
+        <image name="NewMain_ResetOn.png" width="24" height="28"/>
+        <image name="NewMain_SettingOff.png" width="29" height="29"/>
+        <image name="NewMain_SettingOn.png" width="29" height="29"/>
+        <image name="NewMain_ShareOff.png" width="31" height="27"/>
+        <image name="NewMain_ShareOn.png" width="31" height="26"/>
+        <image name="NewMain_StickerOff.png" width="26" height="25"/>
+        <image name="NewMain_StickerOn.png" width="26" height="25"/>
+        <image name="NewMain_TextOff.png" width="25" height="23"/>
+        <image name="NewMain_TextOn.png" width="25" height="23"/>
+        <image name="NewMain_UtilitiesOff.png" width="29" height="26"/>
+        <image name="NewMain_UtilitiesOn.png" width="29" height="26"/>
+    </resources>
+</document>

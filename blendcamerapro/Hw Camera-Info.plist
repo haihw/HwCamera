@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>Hw Camera</string>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleGetInfoString</key>
+	<string></string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>Icon57x57.png</string>
+		<string>Icon114x114.png</string>
+	</array>
+	<key>CFBundleIcons</key>
+	<dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>icon29x29</string>
+				<string>icon58x58</string>
+				<string>icon80x80</string>
+				<string>icon120x120</string>
+				<string>Icon57x57.png</string>
+				<string>Icon114x114.png</string>
+			</array>
+			<key>UIPrerenderedIcon</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>CFBundleIdentifier</key>
+	<string>com.haihw.instaeffect</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>HwCamera</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.1</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.haihw.instaeffect</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb715233731824509</string>
+				<string>com.haihw.instaeffect</string>
+				<string>HwCamera</string>
+				<string>fastfx</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>2</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.photography</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSHumanReadableCopyright</key>
+	<string>Hai Hw</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Mr Canfields.ttf</string>
+		<string>INKITMT.otf</string>
+		<string>Mr Sheffield.ttf</string>
+		<string>Petra Script EF Alternate.ttf</string>
+		<string>PFChampionScriptPro-Regular.otf</string>
+		<string>SF Distant Galaxy AltOutline Italic.ttf</string>
+		<string>SF Distant Galaxy Italic.ttf</string>
+		<string>SFDistantGalaxyOutlineItalic.ttf</string>
+		<string>WiegelLateinMedium.ttf</string>
+		<string>Eutemia.ttf</string>
+		<string>OneStarryNight.ttf</string>
+		<string>milktopgirl.ttf</string>
+		<string>Jellyka Delicious Cake.ttf</string>
+		<string>Filxgirl.TTF</string>
+		<string>PC Snowballs.ttf</string>
+		<string>HARRYP_.TTF</string>
+		<string>Top Secret.ttf</string>
+		<string>GREENPIL.TTF</string>
+		<string>PATCL.TTF</string>
+		<string>ChopinScript.otf</string>
+		<string>FREEBSC.ttf</string>
+		<string>Gabrielle.ttf</string>
+		<string>DasReichtGut.ttf</string>
+		<string>KILLIGRA.TTF</string>
+		<string>PORCELAI.TTF</string>
+		<string>PortuguesArcaicoLectura.ttf</string>
+		<string>SCRIPTIN.ttf</string>
+		<string>Scriptina Pro.otf</string>
+		<string>SELFISH.TTF</string>
+		<string>the_King__26_Queen.ttf</string>
+		<string>AlphaClouds.ttf</string>
+		<string>chp-fire.ttf</string>
+		<string>HEARRG__.TTF</string>
+		<string>Tr2n.ttf</string>
+		<string>Transformers Movie.ttf</string>
+		<string>1942.ttf</string>
+		<string>ABITE.ttf</string>
+		<string>ALHAMBRA.TTF</string>
+		<string>Asian Guy.ttf</string>
+		<string>CactusSandwich.ttf</string>
+		<string>Chinatoo.ttf</string>
+		<string>coolvetica rg.ttf</string>
+		<string>dock_51.ttf</string>
+		<string>DOMINICA.TTF</string>
+		<string>Drifttype.ttf</string>
+		<string>geek.ttf</string>
+		<string>go3v2.ttf</string>
+		<string>HFF Chinese Dragon.ttf</string>
+		<string>ICE_AGE.ttf</string>
+		<string>JennaSue.ttf</string>
+		<string>KaraBenNemsi.ttf</string>
+		<string>LeviReBrushed.ttf</string>
+		<string>Korean_Calligraphy.ttf</string>
+		<string>MAELS___.TTF</string>
+		<string>Plane Crash.ttf</string>
+		<string>PORKYS_.TTF</string>
+		<string>Sketch College.ttf</string>
+		<string>SnowtopCaps.otf</string>
+		<string>Ukiran.ttf</string>
+		<string>Winter flakes.ttf</string>
+		<string>Bonnet.ttf</string>
+		<string>brankovic.ttf</string>
+		<string>Candcu.ttf</string>
+		<string>Candle3D.ttf</string>
+		<string>christmas.ttf</string>
+		<string>Cw_cancn.ttf</string>
+		<string>Krabougja.ttf</string>
+		<string>kringle.ttf</string>
+		<string>Sketchetik-Light.ttf</string>
+		<string>Snowcaps.ttf</string>
+		<string>Snowdrft.ttf</string>
+	</array>
+	<key>UIPrerenderedIcon</key>
+	<true/>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UIStatusBarHidden</key>
+	<true/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+</dict>
+</plist>

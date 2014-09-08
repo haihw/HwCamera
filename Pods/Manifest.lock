@@ -1,0 +1,65 @@
+PODS:
+  - Bolts (1.1.2)
+  - Facebook-iOS-SDK (3.16.2):
+    - Bolts
+  - GoogleAnalytics-iOS-SDK (3.0.9)
+  - GPUImage (0.1.5)
+  - MBProgressHUD (0.9)
+  - PKMultipartInputStream (1.1.0)
+  - Reachability (3.1.1)
+  - SAMTextView (0.2.1)
+  - SDWebImage (3.7.1):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.7.1)
+  - ShareKit/Core (3.0.0):
+    - SAMTextView (~> 0.2.1)
+    - SDWebImage (~> 3.7.1)
+    - ShareKit/NoARC
+    - ShareKit/Reachability
+    - SSKeychain (~> 1.2.2)
+    - UIActivityIndicator-for-SDWebImage (~> 1.2)
+  - ShareKit/Facebook (3.0.0):
+    - Facebook-iOS-SDK (~> 3.16.2)
+    - ShareKit/Core
+  - ShareKit/Flickr (3.0.0):
+    - ShareKit/Core
+  - ShareKit/Instagram (3.0.0):
+    - ShareKit/Core
+  - ShareKit/NoARC (3.0.0):
+    - PKMultipartInputStream
+    - ShareKit/Core
+  - ShareKit/Reachability (3.0.0)
+  - ShareKit/Tumblr (3.0.0):
+    - ShareKit/Core
+  - ShareKit/Twitter (3.0.0):
+    - ShareKit/Core
+  - SSKeychain (1.2.2)
+  - UIActivityIndicator-for-SDWebImage (1.2):
+    - SDWebImage (~> 3.7)
+
+DEPENDENCIES:
+  - GoogleAnalytics-iOS-SDK
+  - GPUImage
+  - MBProgressHUD
+  - Reachability
+  - ShareKit/Facebook
+  - ShareKit/Flickr
+  - ShareKit/Instagram
+  - ShareKit/Tumblr
+  - ShareKit/Twitter
+
+SPEC CHECKSUMS:
+  Bolts: 2635e8698a630774689441047f3465d78c48d485
+  Facebook-iOS-SDK: 34eef640c2cc4c8618ba0f574ad2b290e07f1b4e
+  GoogleAnalytics-iOS-SDK: d9e198b1f955259a72886769be7377cdfcdb2250
+  GPUImage: 5114a47f5fc33eb312f3731550a3cea379416d04
+  MBProgressHUD: 2038dbcf3dce73215abed6001657043d53aa79a8
+  PKMultipartInputStream: 9e18cd438cbfb8900ccb4d26b3f848768cd92e10
+  Reachability: 8e9635e3cb4f98e7f825e51147f677ecc694d0e7
+  SAMTextView: 1062a784ba7b2080b0c17748001c416b53010b4b
+  SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
+  ShareKit: 0d0aed5d8e04d151a79191f4c8572b27569a68b1
+  SSKeychain: cc48bd3ad24fcd9125adb9e0d23dd50b8bbd08b9
+  UIActivityIndicator-for-SDWebImage: 8bd92c15280fbe54816448c6b14674145eee05c7
+
+COCOAPODS: 0.33.1
